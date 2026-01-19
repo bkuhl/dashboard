@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <script>
+    </script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen m-0 p-0" style="margin-top: 1em;">
+    <div class="w-full px-2 sm:px-4 lg:px-6 space-y-2">
+
+        <!-- Crypto Section - Top Priority -->
+        <section class="mb-2">
+            <div class="flex gap-2">
+                <!-- Crypto Label Column -->
+                <div class="flex-shrink-0 w-6 flex items-center justify-center bg-blue-900/30 rounded-lg py-8">
+                    <span class="text-blue-200 font-bold text-xs tracking-wider writing-mode-vertical whitespace-nowrap" style="writing-mode: vertical-lr; text-orientation: mixed;">
+                        CRYPTO
+                    </span>
+                </div>
+
+                <!-- Crypto Charts Grid -->
+                <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-1">
+                    <!-- Bitcoin -->
+                    <div class="bg-blue-900/30 rounded p-1 shadow-sm" style="height: 200px;">
+                        <tv-mini-chart symbol="COINBASE:BTCUSD" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                    </div>
+
+                    <!-- ETH -->
+                    <div class="bg-blue-900/30 rounded p-1 shadow-sm" style="height: 200px;">
+                        <tv-mini-chart symbol="COINBASE:ETHUSD" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                    </div>
+
+                    <!-- Dash -->
+                    <div class="bg-blue-900/30 rounded p-1 shadow-sm" style="height: 200px;">
+                        <tv-mini-chart symbol="COINBASE:DASHUSD" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                    </div>
+
+                    <!-- SOL -->
+                    <div class="bg-blue-900/30 rounded p-1 shadow-sm" style="height: 200px;">
+                        <tv-mini-chart symbol="COINBASE:SOLUSD" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                    </div>
+
+                    <!-- XRP -->
+                    <div class="bg-blue-900/30 rounded p-1 shadow-sm" style="height: 200px;">
+                        <tv-mini-chart symbol="COINBASE:XRPUSD" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                    </div>
+
+                    <!-- ADA -->
+                    <div class="bg-blue-900/30 rounded p-1 shadow-sm" style="height: 200px;">
+                        <tv-mini-chart symbol="COINBASE:ADAUSD" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                    </div>
+
+                    <!-- LTC -->
+                    <div class="bg-blue-900/30 rounded p-1 shadow-sm" style="height: 200px;">
+                        <tv-mini-chart symbol="COINBASE:LTCUSD" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commodities Section -->
+        <section class="mb-1">
+            <div class="flex gap-2">
+                <!-- Commodities Label Column -->
+                <div class="flex-shrink-0 w-6 flex items-center justify-center bg-emerald-900/30 rounded-lg py-8">
+                    <span class="text-emerald-200 font-bold text-xs tracking-wider writing-mode-vertical whitespace-nowrap" style="writing-mode: vertical-lr; text-orientation: mixed;">
+                        COMMODITIES
+                    </span>
+                </div>
+
+                <!-- Commodities Charts Grid -->
+                <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-1">
+                <!-- Gold -->
+                <div class="bg-emerald-900/30 rounded p-1 shadow-sm" style="height: 200px;">
+                    <tv-mini-chart symbol="TVC:GOLD" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                </div>
+
+                <!-- Silver -->
+                <div class="bg-emerald-900/30 rounded p-1 shadow-sm" style="height: 200px;">
+                    <tv-mini-chart symbol="TVC:SILVER" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                </div>
+
+                <!-- Lithium -->
+                <div class="bg-emerald-900/30 rounded p-1 shadow-sm" style="height: 200px;">
+                    <tv-mini-chart symbol="AMEX:LIT" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                </div>
+
+                <!-- Oil -->
+                <div class="bg-emerald-900/30 rounded p-1 shadow-sm" style="height: 200px;">
+                    <tv-mini-chart symbol="TVC:USOIL" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Stocks Section -->
+        <section class="mb-1">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-2">
+                <div class="flex gap-2 lg:col-span-3">
+                    <!-- Stocks Label Column -->
+                    <div class="flex-shrink-0 w-6 flex items-center justify-center bg-gray-700/30 rounded-lg py-8">
+                        <span class="text-gray-200 font-bold text-xs tracking-wider writing-mode-vertical whitespace-nowrap" style="writing-mode: vertical-lr; text-orientation: mixed;">
+                            STOCKS
+                        </span>
+                    </div>
+
+                    <!-- Stocks Charts Grid -->
+                    <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-1">
+                    <!-- LNC -->
+                    <div class="bg-gray-700/30 rounded p-1 shadow-sm" style="height: 200px;">
+                        <tv-mini-chart symbol="NYSE:LNC" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                    </div>
+
+                    <!-- MSTY -->
+                    <div class="bg-gray-700/30 rounded p-1 shadow-sm" style="height: 200px;">
+                        <tv-mini-chart symbol="AMEX:MSTY" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                    </div>
+
+                    <!-- AMD -->
+                    <div class="bg-gray-700/30 rounded p-1 shadow-sm" style="height: 200px;">
+                        <tv-mini-chart symbol="NASDAQ:AMD" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                    </div>
+
+                    <!-- PSLV -->
+                    <div class="bg-gray-700/30 rounded p-1 shadow-sm" style="height: 200px;">
+                        <tv-mini-chart symbol="AMEX:PSLV" time-frame="7D" show-time-scale theme="dark"></tv-mini-chart>
+                    </div>
+
+                    <!-- TSLA -->
+                    <div class="bg-gray-700/30 rounded p-1 shadow-sm" style="height: 200px;">
+                        <tv-mini-chart symbol="NASDAQ:TSLA" time-frame="6M" show-time-scale theme="dark"></tv-mini-chart>
+                    </div>
+
+                    <!-- COIN -->
+                    <div class="bg-gray-700/30 rounded p-1 shadow-sm" style="height: 200px;">
+                        <tv-mini-chart symbol="NASDAQ:COIN" time-frame="6M" show-time-scale theme="dark"></tv-mini-chart>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Hotlist Widget for Stocks -->
+                <div class="lg:col-span-1">
+                    <div class="bg-gray-800 rounded-lg p-2 shadow-sm h-full flex flex-col">
+                        <h3 class="text-white text-sm font-semibold mb-2 text-center">Today's Market Conditions</h3>
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container flex-1">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/stocks-usa/" rel="noopener nofollow" target="_blank"><span class="blue-text">Stocks today</span></a><span class="trademark"> by TradingView</span></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+                            {
+                            "exchange": "US",
+                            "colorTheme": "dark",
+                            "dateRange": "1D",
+                            "showChart": true,
+                            "locale": "en",
+                            "largeChartUrl": "",
+                            "isTransparent": false,
+                            "showSymbolLogo": false,
+                            "showFloatingTooltip": false,
+                            "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                            "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                            "gridLineColor": "rgba(240, 243, 250, 0)",
+                            "scaleFontColor": "#DBDBDB",
+                            "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                            "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                            "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                            "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                            "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+                            "width": "100%",
+                            "height": "200"
+                            }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-mini-chart.js"></script>
+
+    <style>
+        /* Ensure all widget container divs are exactly the same size */
+        /* Target all containers with inline height style */
+        body div[style*="height: 200px"] {
+            height: 200px !important;
+            min-height: 200px !important;
+            max-height: 200px !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+
+        /* Backup selector for containers with rounded and shadow classes - only target mini-chart containers */
+        div[class*="rounded"][class*="shadow-sm"]:has(tv-mini-chart) {
+            height: 200px !important;
+            min-height: 200px !important;
+            max-height: 200px !important;
+        }
+
+        /* Ensure hotlist widget containers match chart height */
+        .tradingview-widget-container {
+            height: 200px !important;
+            min-height: 200px !important;
+        }
+
+    </style>
+
+</body>
+</html>
